@@ -1,9 +1,8 @@
 local access = require "kong.plugins.kong-forward-auth.access"
-local kong_meta = require "kong.meta"
 
 
 local KongForwardAuthHandler = {
-  VERSION = kong_meta.version,
+  VERSION = "0.1.0",
   PRIORITY = 1400,
 }
 
