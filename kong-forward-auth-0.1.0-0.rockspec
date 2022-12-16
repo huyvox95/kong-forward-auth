@@ -1,11 +1,11 @@
-package = "kong-auth-request"
+package = "kong-forward-auth"
 
-version = "0.1.8-0"
+version = "0.1.0-0"
 
 supported_platforms = {"linux", "macosx"}
 
 source = {
-  url = "git://github.com/huyvox95/kong-auth-request",
+  url = "git://github.com/huyvox95/kong-forward-auth",
   tag = "master"
 }
 
@@ -20,8 +20,8 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ["kong.plugins.kong-auth-request.access"] = "src/access.lua",
-    ["kong.plugins.kong-auth-request.handler"] = "src/handler.lua",
-    ["kong.plugins.kong-auth-request.schema"] = "src/schema.lua"
+    ["kong.plugins.kong-forward-auth.access"] = "src/access.lua",
+    ["kong.plugins.kong-forward-auth.handler"] = "src/handler.lua",
+    ["kong.plugins.kong-forward-auth.schema"] = "src/schema.lua"
   }
 }
